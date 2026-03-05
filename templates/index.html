@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Python Learning</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1 class="title">🐍 Learn Python Interactively</h1>
+
+<div class="card-container">
+
+{% for id, lesson in lessons.items() %}
+
+<div class="card">
+<h2>{{lesson.title}}</h2>
+<p>{{lesson.content}}</p>
+
+<a href="/lesson/{{id}}">
+<button>Start Lesson</button>
+</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+</html>

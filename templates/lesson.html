@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>{{lesson.title}}</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>{{lesson.title}}</h1>
+
+<p>{{lesson.content}}</p>
+
+<h3>Example</h3>
+
+<textarea id="code">
+{{lesson.example}}
+</textarea>
+
+<button onclick="runCode()">Run Code</button>
+
+<div class="output" id="output"></div>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
